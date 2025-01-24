@@ -1,7 +1,8 @@
-End-to-End Sentiment Analysis Pipeline
+#End-to-End Sentiment Analysis Pipeline
+
 The data pipeline is designed to fetch, process, and analyze the sentiment of news articles using Apache Kafka, AWS services, and other modern tools. Below is a step-by-step breakdown of the pipeline's components and functionality.
 
-# ARCHITECTURE
+## ARCHITECTURE
 
 ![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/Architecture.jpeg)
 
@@ -11,7 +12,7 @@ Kafka acts as a message broker and enables real-time data streaming between diff
 
 From Kafka, the processed data is either directed toward Amazon RDS for real-time storage and analysis or stored in Amazon S3  in json format for archival and further processing.
 
-# S3 Bucket
+##S3 Bucket
 
 
 ![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/s3_output.jpeg)
