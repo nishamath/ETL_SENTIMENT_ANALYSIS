@@ -27,7 +27,17 @@ The Streamlit app reads the CSV file in parts and analyzes the "title" column fo
 
 ![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/Local_streamlit.png)
 
+Developed the Streamlit app locally using essential libraries like pandas for data manipulation, streamlit for the interactive dashboard, and textblob for sentiment analysis. After testing and ensuring the app worked correctly,moved on to containerizing it.
 
+*created a Dockerfile. This script defines how the Streamlit app should be packaged into a Docker container, specifying the required dependencies and how the app should run. This step is 
+ essential for deploying the app consistently across different environments. This created a container image with the Streamlit app and its dependencies, ready for deployment.
+ 
+![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/Docker%20Image.jpeg)
+
+ ##DASHBOARD (8051)
+Pushed the Docker image to Amazon Elastic Container Registry (ECR).the docker push command to upload it to ECR, making it available for use in AWS ECS.
+The Docker containers are managed on AWS ECS Fargate, a serverless container management service. To run the pipeline, a Fargate cluster, task definition, and services are created.
+The sentiment analysis results are displayed on an interactive dashboard accessible via a public IP address, providing users with valuable insights into news sentiment trends.
 
 
 
