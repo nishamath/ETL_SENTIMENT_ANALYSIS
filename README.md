@@ -30,7 +30,7 @@ The Streamlit app reads the CSV file in parts and analyzes the "title" column fo
 Developed the Streamlit app locally using essential libraries like pandas for data manipulation, streamlit for the interactive dashboard, and textblob for sentiment analysis. After testing and ensuring the app worked correctly,moved on to containerizing it.
 
 *created a Dockerfile. This script defines how the Streamlit app should be packaged into a Docker container, specifying the required dependencies and how the app should run. This step is 
- essential for deploying the app consistently across different environments. This created a container image with the Streamlit app and its dependencies, ready for deployment. CHecked the docker image using diffrent port 8503.
+ essential for deploying the app consistently across different environments. This created a container image with the Streamlit app and its dependencies, ready for deployment. Checked the docker image using diffrent port 8503.
  
 ![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/Docker%20Image.jpeg)
  
