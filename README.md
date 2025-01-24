@@ -23,6 +23,19 @@ The processed data is sent to Amazon S3, where it is stored for further analysis
 
 The Streamlit app reads the CSV file in parts and analyzes the "title" column for sentiment and polarity. It adds each part to a live-updating table that shows the title, description, sentiment (Positive, Negative, or Neutral), and polarity. The app updates every 2 seconds, creating a streaming effect. Errors or missing data show warnings, and a success message appears when processing is complete.
 
+#LOCAL STREAMLIT(8501)
+
 ![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/Local_streamlit.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
