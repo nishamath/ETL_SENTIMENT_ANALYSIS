@@ -1,6 +1,6 @@
 # End-to-End Sentiment Analysis Pipeline
 
-The data pipeline is designed to fetch, process, and analyze the sentiment of news articles using Apache Kafka, AWS services, and other modern tools. Below is a step-by-step breakdown of the pipeline's components and functionality.
+The data pipeline is designed to Extract, Transform, and Analyze the sentiment of news articles using Apache Kafka, AWS services, and other modern tools. Below is a step-by-step breakdown of the pipeline's components and functionality.
 
 ##ARCHITECTURE
 
@@ -12,7 +12,8 @@ Kafka acts as a message broker and enables real-time data streaming between diff
 
 From Kafka, the processed data is either directed toward Amazon RDS for real-time storage and analysis or stored in Amazon S3  in json format for archival and further processing.
 
-##S3 BUCKET
+S3 BUCKET
+---------------
 
 ![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/s3_output.jpeg)
 The processed data is sent to Amazon S3, where it is stored for further analysis. Using Spark Streaming, the data is accessed from the S3 bucket for real-time processing and transformations. The results of this processing are then visualized in DBeaver, which connects to the data pipeline to enable easy querying and exploration of the processed data.
