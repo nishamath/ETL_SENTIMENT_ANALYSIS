@@ -53,6 +53,17 @@ DASHBOARD (8051)
 
 
 
+#Tools & Technologies Used:
+
+Languages: Python,TextBlob,SQL
+ETL Tools: Apache Kafka, AWS Lambda
+Databases: PostgreSQL (Amazon RDS), Amazon S3
+Visualization: Streamlit, DBeaver
+Deployment: Docker, Amazon ECS (Fargate), Amazon ECR
+
+
+
+
 
 
 
