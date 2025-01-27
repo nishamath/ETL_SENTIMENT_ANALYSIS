@@ -13,7 +13,10 @@ S3 BUCKET
 ---------------
 
 ![Architecture](https://github.com/nishamath/ETL_SENTIMENT_ANALYSIS/blob/main/IMAGES/s3_output.jpeg)
-*The processed data is sent to Amazon S3, where it is stored for further analysis. Using Spark Streaming, the data is accessed from the S3 bucket for real-time processing and transformations. 
+*The processed data is sent to Amazon S3, where it is stored for further analysis. Using Spark Streaming, the data is accessed from the S3 bucket for real-time processing and transformations.
+
+DBEAVER OUTPUT
+---------------
 
 *The data stored in Amazon RDS is accessed and managed using DBeaver, a database management tool. This enables easy querying, visualization, and analysis of the stored data for further insights and operations.
 
